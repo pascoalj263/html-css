@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        h1{
+            background-color: green;
+            color: white;
+        }
+        div:hover{
+            color: black;
+            width: 400px;
+        }
+        div > p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            color: white;
+            text-align: left;
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            background-image: linear-gradient(to right, green, white);
+            border: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de HOVER</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>José Pascoal Alves</p>
+    </div>
+    <p>fim do Exemplo</p>
+</body>
+</html>

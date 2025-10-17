@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens adaptaveis </title>
+</head>
+<body style="background-color: rgb(48, 214, 186);">
+    <h1 style="text-align: center;">Imagens</h1>
+    <picture>
+        <source media="(max-width: 700px)" srcset="p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="m.png" type="image/png">
+        <img src="g.png" alt="imagem grande">
+    </picture>
+        <h1>Reproduzindo Audios</h1>
+        <p>irei aprender a reproduzir audio em HTML 5</p>
+       <!--<img src="midia/i.png" alt="infor">--> 
+       <!-- <audio src="midia/hermecalling.mp3" controls autoplay></audio>-->
+       <audio preload="metadata" controls autoplay loop>
+            <source src="midia/hermecalling.mp3" type="audio/mpeg">
+            <source src="midia/hermecalling.ogg" type="audio/ogg">
+            <source src="midia/hermecalling.wav" type="audio/wav">
+            <p>infelizmente seu navegador não consegue reproduzir este audio</p>
+            <a href="midia/hermecalling.mp3" download="hermecalling.mp3" type="audio/mpeg"> clique aqui para baixar o arquivo</a>
+       </audio>
+
+</body>
+</html>
